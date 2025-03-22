@@ -1,6 +1,6 @@
 lang: en-US
 # theme: jekyll-theme-minima
-remote_theme: jekyll/minima
+remote_theme: rkooyenga/minima
 minima:
 skin: classic # or auto if you want it to switch with your system settings.
 
