@@ -39,7 +39,7 @@
 }
 
 .trigger-down a {
-  position: absolute;
+  position: relative;
   z-index: 100;
   display: inline-block; /* Changed to inline-block */
   font-size: 50px;
@@ -88,7 +88,7 @@
   background-attachment: fixed;
 }
 p{font-size:19px;margin-bottom:15px;padding:bottom:10px;}
-h1{font-weight:bold;font-size:9rem;color:#fff;font-family:'Lato',sans-serif;line-height:1;max-height:30vh;}  
+h1{position:absolute;font-size:9rem;color:#fff;font-family:'Lato',sans-serif;line-height:3rem;padding:0;margin:5px;max-height:30vh;}  
 </style>
   </head>
   <body>
@@ -96,8 +96,8 @@ h1{font-weight:bold;font-size:9rem;color:#fff;font-family:'Lato',sans-serif;line
       <div class="wrapper">
 
         <section id="hero" class="hero-section">
-          <div class="hero-image-container" style="background-image: url('/assets/img/home.jpg');"></div>
-          <h1>WEBMX::Ventures</h1>
+          <div class="hero-image-container" style="background-image: url('/assets/img/home.jpg');">          <h1>WEBMX::Ventures</h1>
+</div>
           <div class="trigger-down">
             <a href="#"><i class="arrow down"></i></a>
           </div>
