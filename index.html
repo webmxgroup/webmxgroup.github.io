@@ -30,9 +30,16 @@
   background-repeat: no-repeat;
 }
 
+.trigger-down {
+  position: absolute;
+  bottom: 50px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100; /* Ensure it's above the image */
+}
 
 .trigger-down a {
-  position: relative;
+  position: absolute;
   z-index: 100;
   display: inline-block; /* Changed to inline-block */
   font-size: 50px;
@@ -90,9 +97,8 @@ h1{font-weight:bold;font-size:9rem;color:#fff;font-family:'Lato',sans-serif;line
 
         <section id="hero" class="hero-section">
           <div class="hero-image-container" style="background-image: url('/assets/img/home.jpg');"></div>
+          <h1>WEBMX::Ventures</h1>
           <div class="trigger-down">
-            <h1>WEBMX ::&#10;
-            Ventures</h1>
             <a href="#"><i class="arrow down"></i></a>
           </div>
         </section>
