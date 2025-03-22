@@ -7,7 +7,7 @@ skin: classic # or auto if you want it to switch with your system settings.
 title: WebMX Ventures
 author: 
   name: Webmx
-  email: gmc5oz4k7@mozmail.com
+  email: 
 
 baseurl: "/"
 url: "https://webmxgroup.github.io"
