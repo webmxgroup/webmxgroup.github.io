@@ -1,0 +1,81 @@
+lang: en-US
+# theme: jekyll-theme-minima
+remote_theme: jekyll/minima
+minima:
+skin: classic # or auto if you want it to switch with your system settings.
+
+title: WebMX Ventures
+author: 
+  name: Webmx
+  email: gmc5oz4k7@mozmail.com
+
+baseurl: "/"
+url: "https://webmxgroup.github.io"
+  name: webmxgroup
+  twitter: 
+  picture:
+twitter_username: 
+github_username: webmxgroup
+logo: https://avatars.githubusercontent.com/u/7643519?s=400&u=ec93022e29188437ed213dd30600ef4f9390bcdd&v=4 # path of site logo, e.g. "/assets/images/logo.jpeg"
+
+links_to_prev_next: true
+
+minima:
+  skin: classic
+  date_format: "%a, %b %-d, %Y"
+  social_links:
+    - { platform: github, user_url: "https://github.com/webmxgroup/" }
+    - { platform: twitter, user_url: "https://twitter.com/" }
+    - { platform: youtube, user_url: "https://www.youtube.com/" }
+#    - { platform: linkedin, user_url: "https://www.linkedin.com/in/" }
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-pwa-plugin
+  - jekyll-tagging-related_posts
+  - jekyll-target-blank
+  - jekyll-postfiles
+  - jekyll-og-image
+
+tagline: 
+
+github_edit_url: 
+
+feed:
+  posts_limit: 3
+
+permalink: "/:title"
+
+#pwa:
+#  enabled: true # Optional
+#  sw_src_filepath: service-worker.js # Optional
+#  sw_dest_filename: service-worker.js # Optional
+#  dest_js_directory: assets/js # Required
+#  precache_recent_posts_num: 5 # Optional
+#  precache_glob_directory: / # Optional
+ # precache_glob_patterns: # Optional
+  #  - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+  #  - index.html
+  # precache_glob_ignores: # Optional
+   # - sw-register.js
+   # - "fonts/**/*"
+
+og_image:
+  output_dir: 
+#  image: "/assets/img"
+#  domain: "webmxgroup.github.io"
+  border_bottom:
+    width: 20
+    fill:
+#      - "#820C02"
+#      - "#A91401"
+#      - "#D51F06"
+#      - "#DE3F24"
+#      - "#EDA895"
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+ignored_tags: [tags,to,ignore]
