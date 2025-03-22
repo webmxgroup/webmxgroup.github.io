@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async src="/assets/js/newscript.js"></script>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {% if site.plugins contains: jekyll-feed %}
+      <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title | escape }}">
+    {% endif %}
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer ||;
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    {%- include custom-head.html -%}
+    <style>/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Make it full viewport height */
+  overflow: hidden; /* Prevent scrollbar */
+}
+
+.hero-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trigger-down {
+  position: absolute;
+  bottom: 50px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100; /* Ensure it's above the image */
+}
+
+.trigger-down a {
+  position: relative;
+  z-index: 99;
+  display: inline-block; /* Changed to inline-block */
+  font-size: 50px;
+  color: white;
+  border-radius: 50%;
+  padding: 23px 26px;
+  border: 2px dashed rgba(255, 255, 255, 0.7);
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* Arrow Style (Basic CSS Arrow) */
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Bio Section Styles */
+.bio-section {
+  padding: 80px 20px; /* Adjust padding as needed */
+  text-align: center; /* Or left-align as desired */
+  max-width: 800px; /* Optional: Limit text width */
+  margin: 0 auto;
+}
+
+/* Full-Screen Image Styles */
+.full-screen-image {
+  width: 100%;
+  height: 100vh; /* Make it full viewport height */
+  overflow: hidden;
+}
+
+.full-screen-image .image-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Enable parallax effect */
+  background-attachment: fixed;
+}</style>
+  </head>
+  <body>
+    <a class="skip-link screen-reader-text" href="#main-content">{{ 'Skip to content' | default: 'Skip to content' }}</a>
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content" id="main-content">
+      <div class="wrapper">
+
+        <section id="hero" class="hero-section">
+          <div class="hero-image-container" style="background-image: url('/assets/img/home.jpg');"></div>
+          <div class="trigger-down">
+            <a href="#"><i class="arrow down"></i></a>
+          </div>
+        </section>
+
+        <section class="bio-section">
+          <p>WebMX Group is a dynamic collective of initiatives, starting with a boutique marketing investment firm and an adventure launchpad for testing new businesses—whether they are tech startups or unconventional yet profitable ventures. If you have a unique challenge and an undeniably interesting opportunity with clear revenue potential that isn’t yet translating to dollars, we may be the right people to help.</p>
+        </section>
+
+        <section class="bio-section">
+          <p>As a cooperative investment and advisory firm, we keep overhead low, allowing us to stay agile and unafraid. Based in Southern California, our main focus areas include real estate, technology, privately held contextual ad networks, and, occasionally, publishing and entertainment.</p>
+        </section>
+
+        <section id="image-2" class="full-screen-image">
+          <div class="image-container" style="background-image: url('/assets/img/cubic.png');"></div>
+        </section>
+
+        <section class="bio-section">
+          <p>WebMX primarily invests in technologies and familiar verticals within Southern California, avoiding much of the noise in places like San Francisco, where we are perfectly comfortable staying out of the spotlight.</p>
+          <p>Our investment strategies include debt, equity, and equity-linked options. We also offer capital structure and operational consulting for technologies and familiar verticals.</p>
+        </section>
+        <section class="bio-section">
+          <p>The Ventures team at WebMX spearheads all new projects and R&D, requiring a bold and focused approach. Always experimental, Ventures operates without a rulebook, where a project might last anywhere from a weekend to a year. Serving clients in Arizona, Portland, Chicago, and across Central and South America, we add value through strategic development, sales strategies, and expertise in high-risk, high-yield acquisitions. We specialize in revitalizing businesses, reducing operational costs, and turning around organizations that have been built incorrectly.</p>
+        </section>
+        <section class="bio-section">
+          <p>At WebMX, good ideas are plentiful. We prioritize revenue streams over abstract concepts of “funny money” or theoretical profits. We look for opportunities to fill gaps in verticals, leveraging competitive advantages to create real value.</p>
+        </section>
+        <section class="bio-section">
+          <p>At our core, dedication and loyalty drive us. We believe in reciprocity, and our team is composed of charismatic leaders who are passionate about driving business forward. Our expertise includes brand architecture, quick business model overhauls, and operational efficiency. We’re experts at cutting the fat and unifying teams around clear, concise, and attainable objectives.</p>
+        </section>
+        <section class="bio-section">
+          <p>We focus on investing in solid teams that can recognize opportunities, shift gears when necessary, and even create new markets. We require the flexibility to move swiftly and decisively—things can change quickly, and we need the ability to act fast.</p>
+        </section>
+        <section class="bio-section">
+          <p>If the metrics justify it, we can deliver extraordinary results. For example, we’ve quadrupled PPC conversion in four of the most competitive verticals, an achievement we’ve consistently replicated.</p>
+        </section>
+        <section class="bio-section">
+          <p>Take our nationwide distributorship project, which faced legal and financial challenges. With strategic marketing, we grew from $0 to $80k in 8 weeks and have been generating autopilot revenue of $45k–$65k per month for 24 months and counting.</p>
+        </section>
+        <section class="bio-section">
+          <p>Both of these projects started with no capital and each generated over a million in revenue.</p>
+        </section>
+        <section class="bio-section">
+          <p>At WebMX, we believe in investing in honest people. That’s the foundation from which anything of value can grow. With the right mix of viable theories, limited resources, a respectable stake in what we build, and good chemistry, we have everything we need to bring our next big project to life.</p>
+        </section>
+
+      </div>
+    </main>
+
+  </body>
+</html>
